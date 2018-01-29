@@ -43,4 +43,41 @@
  @import "../node_modules/bootstrap/scss/utilities";
  @import "../node_modules/bootstrap/scss/print";
 
+/* Footer sectiom */
+.pp-footer {
+  background: #ddd;
+}
+
+.pp-footer a.credit {
+  color: inherit;
+  border-bottom: 1px dashed;
+}
+
+.pp-footer .fa {
+  width: 18px;
+}
+
+.pp-footer .fa-2x {
+  font-size: 22px;
+}
+
+.pp-footer i {
+  color: #888;
+}
+
+.pp-footer .pp-facebook:hover i {
+  color: #3b5998;
+}
+
+.pp-footer .pp-twitter:hover i {
+  color: #1da1f2;
+}
+
+.pp-footer .pp-google-plus:hover i {
+  color: #dd4b39;
+}
+
+.pp-footer .pp-instagram:hover i {
+  color: #405de6;
+}
 
