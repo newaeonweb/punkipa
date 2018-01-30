@@ -22,7 +22,7 @@
           </div>
         </div>
       </div>
-      <!-- <div class="container px-0 py-4">
+      <div class="container px-0 py-4">
         <div class="pp-category-filter">
           <div class="row">
             <div class="col-sm-12">
@@ -34,12 +34,11 @@
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
       <div class="container px-0">
         <div class="pp-gallery">
           <div class="card-columns">
-            <div class="card" data-groups="[&quot;nature&quot;]" *ngFor="let item of beersList | search: searchText | filter: selectedFilter
-            ">
+            <div class="card" data-groups="[&quot;beer&quot;]" *ngFor="let item of beersList | search: searchText | filter: selectedFilter">
               <a href="">
                 <figure class="pp-effect">
                   <img class="img-fluid" [src]="item.image_url" [alt]="item.name" style="height:250px!important; margin: 0 auto;" />
