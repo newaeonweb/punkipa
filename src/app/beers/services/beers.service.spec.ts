@@ -12,7 +12,7 @@ describe('BeersService', () => {
     TestBed.configureTestingModule({
       imports: [HttpClientModule, FormsModule, ReactiveFormsModule],
       providers: [BeersService],
-      declarations: [SearchPipe, FilterPipe]
+      declarations: []
     });
   });
 
