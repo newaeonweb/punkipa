@@ -42,8 +42,12 @@ export class BeersComponent implements OnInit {
     this.selectedFilter = undefined;
   }
 
+  /**
+   * Save beer detail to localstorage
+   */
+
   public viewDetail (item: any) {
-    window.localStorage.setItem('game', JSON.stringify({item}));
+    window.localStorage.setItem('beer', JSON.stringify({item}));
   }
 
   /**

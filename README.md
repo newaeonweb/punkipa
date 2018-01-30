@@ -48,13 +48,13 @@ O resultado pode ser conferido clicando [aqui](http://punkipa-app.surge.sh)
 # Gerar Documentação
 
 ```
-  npm run compodoc
+  npm run doc:build
 ```
 
 ## Visitar Documentação
 
 ```
-  npm run serve docs
+  npm run doc:serve
 ```
 
 > Antes é necessário instalar o compodoc

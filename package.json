@@ -11,8 +11,9 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "serve": "http-server -p 8080",
-    "compodoc": "./node_modules/.bin/compodoc -p ./tsconfig.json",
-    "serve docs": "compodoc -s -d ./documentation"
+    "doc:build": "compodoc -p src/tsconfig.app.json",
+    "doc:serve": "compodoc -s",
+    "doc:buildandserve": "compodoc -p src/tsconfig.app.json -s",
   },
   "private": true,
   "dependencies": {
