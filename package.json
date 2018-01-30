@@ -12,8 +12,8 @@
     "e2e": "ng e2e",
     "serve": "http-server -p 8080",
     "doc:build": "compodoc -p src/tsconfig.app.json",
-    "doc:serve": "compodoc -s",
-    "doc:buildandserve": "compodoc -p src/tsconfig.app.json -s",
+    "doc:serve": "compodoc -r 8090 -s",
+    "doc:buildandserve": "compodoc -p src/tsconfig.app.json -s"
   },
   "private": true,
   "dependencies": {

@@ -57,6 +57,8 @@ O resultado pode ser conferido clicando [aqui](http://punkipa-app.surge.sh)
   npm run doc:serve
 ```
 
+This command run compodoc on port: 8090 ie. http://localhost:8090
+
 > Antes é necessário instalar o compodoc
 
 ```
