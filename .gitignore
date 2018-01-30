@@ -63,3 +63,6 @@ dist/
 # No IDE stuff
 .vscode/
 .idea/
+
+# Documentation
+Documentation/

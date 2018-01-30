@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { BeersService } from './services/beers.service';
 import { BeerInterface } from './models/beer.interface';
 
+/**
+ * The main component
+ */
 @Component({
   moduleId: module.id,
   selector: 'app-games',
@@ -23,9 +26,17 @@ export class BeersComponent implements OnInit {
     this.getBeers();
   }
 
+  /**
+   * Filter by property
+   */
+
   public filterProperty (property: string): void {
     this.selectedFilter = property;
   }
+
+  /**
+   * Remove Filter reset list to default state
+   */
 
   public removeFilter (): void {
     this.selectedFilter = undefined;
@@ -35,6 +46,9 @@ export class BeersComponent implements OnInit {
     window.localStorage.setItem('game', JSON.stringify({item}));
   }
 
+  /**
+   * Get beers, page = 1, per_page= 10
+   */
 
   public getBeers () {
     this.isLoading = true;
@@ -44,11 +58,19 @@ export class BeersComponent implements OnInit {
     );
   }
 
+  /**
+   * Handling response
+   */
+
   protected handleResponse (response: any) {
     this.isLoading = false;
     this.requestError = null;
     return this.beersList = response;
   }
+
+  /**
+   * Handling error
+   */
 
   protected handleError (error: any) {
     this.isLoading = false;

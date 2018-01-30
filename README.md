@@ -44,3 +44,27 @@ Visite: http://localhost:8080
 # Produção:
 
 O resultado pode ser conferido clicando [aqui](http://punkipa-app.surge.sh)
+
+# Gerar Documentação
+
+```
+  npm run compodoc
+```
+
+## Visitar Documentação
+
+```
+  npm run serve docs
+```
+
+> Antes é necessário instalar o compodoc
+
+```
+  npm install -g @compodoc/compodoc
+```
+
+_Caso queira instalar apenas no projeto utilize o comando_:
+
+```
+  npm install --save-dev @compodoc/compodoc
+```

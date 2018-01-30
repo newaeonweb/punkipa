@@ -4,7 +4,10 @@ import { RouterModule } from '@angular/router';
 
 import { BeersComponent } from './beers/beers.component';
 
-
+/**
+ * Main module routing
+ *
+ */
 const appRoutes: Routes = [
   { path: '', redirectTo: 'beers', pathMatch: 'full' },
   { path: 'beers', component: BeersComponent }
